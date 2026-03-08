@@ -4,7 +4,7 @@
   "description": "Real-time YouTube Watch Party with role-based access control",
   "scripts": {
     "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
-    "build": "cd client && npm install && npm run build",
+    "build": "cd client && npm install --include=dev && npm run build",
     "start": "node server/index.js",
     "install:all": "npm install && cd server && npm install && cd ../client && npm install"
   },
